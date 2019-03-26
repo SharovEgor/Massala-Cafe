@@ -1,0 +1,30 @@
+@font-face {
+    font-family: 'JOURNALISM';
+    src: url('../font/JOURNALISM/journalism2.eot');
+    src: url('../font/JOURNALISM/journalism2.eot?#iefix') format('embedded-opentype');
+    src: url('../font/JOURNALISM/JOURNALISM.ttf') format('truetype'),
+    url('../font/JOURNALISM/JOURNALISM.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'rokkitt';
+    src: url('../font/rokkitt/rokkittlight.ttf') format('truetype'),
+    url('../font/rokkitt/rokkittlight.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'rokkitt';
+    src: url('../font/rokkitt/rokkitt.ttf') format('truetype'),
+    url('../font/rokkitt/rokkitt.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'rokkitt';
+    src: url('../font/rokkitt/rokkittbold.ttf') format('truetype'),
+    url('../font/rokkitt/rokkittbold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
