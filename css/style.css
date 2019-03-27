@@ -1,3 +1,91 @@
 body {
     font-family: 'Montserrat', sans-serif;
 }
+/*Start header*/
+header {
+    background: url("../img/main.jpg") no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    position: relative;
+}
+nav {
+    top: 38px;
+    right: 35px;
+    left: 80px;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+}
+.logoimg {
+    width: 80px;
+    height: 30px;
+    display: block;
+    background-color: aqua;
+}
+.menu button{
+    background: transparent;
+    border: 0;
+    padding-left: 0;
+    padding-right: 45px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: normal;
+    color: #FFFFFF;
+}
+.main-screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding-top: 210px;
+}
+.main-screen__title1 {
+    font-family: 'JOURNALISM';
+    font-size: 150px;
+    line-height: 120px;
+    letter-spacing: 0.3em;
+    color: #FFFFFF;
+    margin-right: -0.35em;
+}
+.main-screen__img {
+    margin: 20px 0;
+}
+.main-screen__title2 {
+    font-family: 'JOURNALISM';
+    font-size: 77px;
+    line-height: 62px;
+    color: #FFFFFF;
+}
+
+.main-screen__button {
+    border: 3px solid #FFFFFF;
+    color: #FFFFFF;
+    font-family: 'rokkitt';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: normal;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: transparent;
+    padding: 8px 22px;
+    width: 200px;
+    margin-top: 55px;
+    outline: 0;
+}
+.main-screen__button:hover {
+    cursor: pointer;
+}
+.social-block {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 80px;
+    padding-bottom: 100px;
+    margin-right: 80px;
+}
+.social-block__vk {
+    margin-right: 40px;
+}
