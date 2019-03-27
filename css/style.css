@@ -16,6 +16,8 @@ nav {
     display: flex;
     justify-content: space-between;
 }
+/*Временный объект
+Будет логотип исправлю*/
 .logoimg {
     width: 80px;
     height: 30px;
@@ -89,3 +91,4 @@ nav {
 .social-block__vk {
     margin-right: 40px;
 }
+/*End header*/
