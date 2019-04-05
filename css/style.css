@@ -21,14 +21,13 @@ body {
     height: 460px;
 }
 .Shadow-box__text-box {
-    margin-left: 5px;
+    margin: 50px 45px 95px 5px;
     color: #000000;
 }
 .text-box__headline {
     font-family: 'JOURNALISM';
     font-size: 46px;
     line-height: 37px;
-    margin-top: 50px;
     margin-bottom: 47px;
     position: relative;
 }
@@ -46,6 +45,4 @@ body {
     font-weight: normal;
     font-size: 20px;
     line-height: 26px;
-    margin-right: 45px;
-    margin-bottom: 95px;
 }
