@@ -15,6 +15,7 @@ body {
     display: flex;
     max-width: 900px;
     height: 460px;
+    margin-bottom: 150px;
 }
 .Shadow-box__img img{
     width: 460px;
