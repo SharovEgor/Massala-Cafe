@@ -1,3 +1,68 @@
 body {
     font-family: 'Montserrat', sans-serif;
 }
+/*Start Menu*/
+.Menu__title {
+    display: flex;
+    font-family: 'JOURNALISM';
+    font-size: 46px;
+    line-height: 37px;
+    text-align: center;
+    position: relative;
+    margin-left: 210px;
+    margin-bottom: 67px;
+}
+.Menu__title:after {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 2px;
+    background: #FFEE54;
+    bottom: -15px;
+    left: 0;
+}
+.Menu__slider {
+    display: flex;
+}
+.Menu__dish {
+    display: flex;
+    flex-direction: column;
+    margin-right: 30px;
+
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.08), -10px 0px 30px rgba(0, 0, 0, 0.08);
+}
+.Dish__img {
+    margin-left: 90px;
+    margin-bottom: 10px;
+}
+.Dish__container {
+    display: flex;
+    margin-left: 25px;
+    margin-bottom: 15px;
+}
+.Dish__title {
+    font-weight: 500;
+    font-size: 16px;
+    margin-top: 15px;
+    margin-left: 25px;
+}
+.Dish__button {
+    width: 40px;
+    height: 40px;
+    font-family: 'Montserrat';
+    font-size: 40px;
+    line-height: unset;
+    background: transparent;
+    border-radius: 100%;
+    border: 1px solid #000;
+    box-sizing: border-box;
+    outline: none;
+    padding: 0 8px;
+}
+.Dish__button:hover {
+    color: #fff;
+    border-color: #FFEE54;
+    background: #FFEE54;
+    box-shadow: 0px 0px 0px 5px rgba(255,238,84,0.5);
+}
+/*End Menu*/
