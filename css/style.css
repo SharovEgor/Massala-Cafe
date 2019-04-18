@@ -1,6 +1,5 @@
 body {
     font-family: 'Montserrat', sans-serif;
-    overflow-x: hidden ;
 }
 /*Start Menu*/
 .Menu__title {
@@ -25,11 +24,6 @@ body {
 .Menu__container {
 
 
-}
-.Menu__hr {
-    width: 210px;
-    height: 2px;
-    background-color: rgba(196, 196, 196, 0.6);
 }
 .item {
     max-width: 380px;
