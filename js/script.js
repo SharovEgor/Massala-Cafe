@@ -1,7 +1,7 @@
 $(document).ready(function(){
     $('.Menu__slider').slick({
-        infinite: true,
-        slidesToShow: 3,
-        slidesToScroll: 3
-});
+        slidesToShow: 2,
+        infinite: false,
+        variableWidth: true
+    });
 });
