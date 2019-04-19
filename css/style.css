@@ -2,6 +2,11 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 /*Start Menu*/
+.content {
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+}
 .Menu__title {
     display: flex;
     font-family: 'JOURNALISM';
@@ -9,7 +14,6 @@ body {
     line-height: 37px;
     text-align: center;
     position: relative;
-    margin-left: 210px;
     margin-bottom: 67px;
 }
 .Menu__title:after {
@@ -22,18 +26,23 @@ body {
     left: 0;
 }
 .Menu__container {
-
+    width: 100%;
+    overflow: hidden;
 
 }
-.item {
+.slick-list {
+    overflow: visible;
+}
+.Menu__item {
     max-width: 380px;
     padding: 30px;
+    position: relative;
 }
 .Menu__slider {
     position: relative;
-    transform: translateX(180px);
+    margin-left: -30px;
 }
-.Menu__slider:before {
+/*.Menu__slider:before {
     position: absolute;
     content: "";
     width: 210px;
@@ -41,11 +50,23 @@ body {
     background-color: rgba(196, 196, 196, 0.6);
     top: 138px;
     left: -180px;
-}
-.Menu__dish {
+}*/
+.Dish {
     display: flex;
     flex-direction: column;
     box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.08), -10px 0px 30px rgba(0, 0, 0, 0.08);
+}
+.Menu__item:first-child .Dish:after {
+    position: absolute;
+    content: "";
+    width: 2000px;
+    height: 2px;
+    background-color: rgba(196, 196, 196, 0.6);
+    top: 0;
+    bottom: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+    right: calc(100% - 30px);
 }
 .Dish__img {
     margin-left: 90px;
@@ -67,7 +88,7 @@ body {
     height: 40px;
     font-family: 'Montserrat';
     font-size: 40px;
-    line-height: unset;
+    line-height: calc(100% - 1px);
     background: transparent;
     border-radius: 100%;
     border: 1px solid #000;
@@ -83,7 +104,8 @@ body {
 }
 .Menu__slider-button {
     margin-top: 40px;
-    margin-left: 1002px;
+    display: flex;
+    justify-content: flex-end;
 }
 .Menu__slider-button button {
     background-color: transparent;
@@ -92,7 +114,8 @@ body {
 .Menu__slider-button button:hover path{
     fill: #FFEE54;
 }
-.Menu__button-l {
+.Menu__button-prev {
     transform: rotateY(180deg);
+    margin-right: 50px;
 }
 /*End Menu*/

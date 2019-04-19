@@ -1,7 +1,9 @@
 $(document).ready(function(){
-    $('.Menu__slider').slick({
+    $('#Menu-catalog .Menu__slider').slick({
         slidesToShow: 2,
         infinite: false,
-        variableWidth: true
+        variableWidth: true,
+        prevArrow: '#Menu-catalog .Menu__button-prev',
+        nextArrow: '#Menu-catalog .Menu__button-next'
     });
 });
