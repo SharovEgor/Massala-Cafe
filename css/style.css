@@ -10,9 +10,12 @@ footer{
 .Footer__logo{
     margin: auto;
     margin-top: 110px;
-    width: 320px;
+    width: 334px;
     height: 130px;
-    background: aqua;
+}
+.Footer__logo img {
+    width: 100%;
+    filter: brightness(0);
 }
 .Footer__container {
     display: flex;
