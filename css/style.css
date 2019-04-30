@@ -15,14 +15,11 @@ nav {
     position: absolute;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
-/*Временный объект
-Будет логотип исправлю*/
-.logoimg {
-    width: 80px;
-    height: 30px;
-    display: block;
-    background-color: aqua;
+.header__logo {
+    width: calc(257px - 10px);
+    height: calc(100px - 10px);
 }
 .menu button{
     cursor: pointer;
@@ -30,7 +27,6 @@ nav {
     border: 0;
     padding-left: 0;
     padding-right: 45px;
-
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
