@@ -1,3 +1,54 @@
 body {
     font-family: 'Montserrat', sans-serif;
 }
+
+.Instagram {
+    overflow-x: hidden;
+}
+.content {
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+}
+.A321{
+    display: flex;
+}
+.Instagram__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 270px;
+}
+.Instagram__title {
+    font-family: 'JOURNALISM';
+    font-size: 24px;
+    transform: rotate(90deg);
+    transform-origin: left bottom;
+    position: relative;
+    left: 8px;
+}
+.Instagram__title:before {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 2px;
+    background-color: #FFEE54;
+    left: -60px;
+    margin-top: auto;
+    margin-bottom: auto;
+    top: 0;
+    bottom: 0;
+}
+.Instagram__link {
+    padding: 11px;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+}
+.Instagram__link img {
+    width: 16px;
+    filter: brightness(0);
+}
+
