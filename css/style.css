@@ -44,9 +44,26 @@ body {
     top: 0;
     bottom: 0;
     margin-top: auto;
-    margin-bottom: auto;
+    margin-bottom: 70px;
 }
-
+.Feedback__quote {
+    position: absolute;
+    font-size: 400px;
+    color: rgba(0, 0, 0, 0.1);
+    z-index: -1;
+    left: -17%;
+    top: -36%;
+}
+.Feedback__quote-small {
+    font-size: 150px;
+    color: #FFEE53;
+    z-index: 1;
+    left: 30px;
+    top: 30px;
+}
+.Feedback__slide {
+    margin-left: 1px;
+}
 .Feedback__text {
     font-style: italic;
     font-size: 16px;
@@ -81,8 +98,15 @@ body {
 
 }
 .Feedback__button {
-    display: inline-flex;
+    min-width: 95px;
+    width: fit-content;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    right: 75px;
+    bottom: 78px
 }
+
 .Feedback__button-prev, .Feedback__button-next {
     width: 40px;
     height: 40px;
@@ -91,10 +115,26 @@ body {
     border-radius: 100%;
     background-color: transparent;
     box-sizing: border-box;
-}
-.Feedback__button-prev {
-    margin-right: 15px;
+    line-height: calc(100% - 3px);
+    padding: 0;
 }
 .Feedback__button-prev svg {
     transform: rotateY(180deg);
+}
+.Feedback__button-hover:hover {
+    border: 2px #FFEE53;
+}
+.Feedback__button-hover:hover path {
+    fill: #FFEE53;
+}
+.Feedback__line {
+    position: absolute;
+    width: calc(100% - (75px * 2));
+    height: 2px;
+    background: rgba(255, 255, 255, 0.2);
+    left: 0;
+    right: 0;
+    margin-right: auto;
+    margin-left: auto;
+    bottom: 61px;
 }
