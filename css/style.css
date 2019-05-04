@@ -122,7 +122,9 @@ body {
     transform: rotateY(180deg);
 }
 .Feedback__button-hover:hover {
-    border: 2px #FFEE53;
+    border-width: 2px;
+    border-color:#FFEE53;
+
 }
 .Feedback__button-hover:hover path {
     fill: #FFEE53;
