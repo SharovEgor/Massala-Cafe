@@ -11,24 +11,37 @@ body {
     margin: 0 auto;
 }
 .A321{
+    /*display: flex;*/
     display: flex;
+    align-items: flex-end;
 }
 .Instagram__container {
-    display: flex;
+   /* display: flex;
     flex-direction: column;
     justify-content: space-between;
-    min-height: 270px;
+    min-height: 270px;*/
+    position: relative;
+    margin-right: 40px;
 }
 .Instagram__title {
-    font-family: 'JOURNALISM';
+/*    font-family: 'JOURNALISM';
     font-size: 24px;
     transform: rotate(90deg);
     transform-origin: left bottom;
     position: relative;
-    left: 8px;
+    left: 8px;*/
+    transform: rotate(90deg);
+    left: -215px;
+    right: 0;
+    top: -320px;
+    bottom: 0;
+    width: max-content;
+    position: absolute;
+    font-family: 'JOURNALISM';
+    font-size: 24px;
 }
 .Instagram__title:before {
-    content: "";
+/*    content: "";
     position: absolute;
     width: 40px;
     height: 2px;
@@ -37,9 +50,17 @@ body {
     margin-top: auto;
     margin-bottom: auto;
     top: 0;
-    bottom: 0;
+    bottom: 0;*/
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 2px;
+    background-color: #FFEE54;
+    left: -60px;
+    top: 10px;
 }
 .Instagram__link {
+    display: block;
     padding: 11px;
     border: 1px solid #000000;
     box-sizing: border-box;
