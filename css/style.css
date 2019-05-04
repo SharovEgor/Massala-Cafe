@@ -1,11 +1,13 @@
 body {
     font-family: 'Montserrat', sans-serif;
 }
+
 .content {
     max-width: 900px;
     width: 100%;
     margin: 0 auto;
 }
+
 .Feedback__title {
     font-family: 'JOURNALISM';
     font-size: 46px;
@@ -14,6 +16,7 @@ body {
     position: relative;
     margin-bottom: 137px;
 }
+
 .Feedback__title:after {
     content: "";
     position: absolute;
@@ -23,17 +26,20 @@ body {
     left: 0;
     bottom: -15px;
 }
+
 .Feedback__container {
     display: flex;
     justify-content: flex-end;
 }
+
 .Feedback__box {
     padding: 110px 75px 70px;
     background: url("../img/feedback.jpg") no-repeat;
     background-size: cover;
-    max-width: calc(700px - 75px*2);
+    max-width: calc(700px - 75px * 2);
     position: relative;
 }
+
 .Feedback__box:before {
     content: '';
     position: absolute;
@@ -46,6 +52,7 @@ body {
     margin-top: auto;
     margin-bottom: 70px;
 }
+
 .Feedback__quote {
     position: absolute;
     font-size: 400px;
@@ -54,6 +61,7 @@ body {
     left: -17%;
     top: -36%;
 }
+
 .Feedback__quote-small {
     font-size: 150px;
     color: #FFEE53;
@@ -61,20 +69,24 @@ body {
     left: 30px;
     top: 30px;
 }
+
 .Feedback__slide {
     margin-left: 1px;
 }
+
 .Feedback__text {
     font-style: italic;
     font-size: 16px;
     letter-spacing: 0.1em;
     color: #FFFFFF;
 }
+
 .Feedback__author {
     display: inline-flex;
     margin-top: 55px;
     background-color: rgba(255, 255, 255, 0.2);
 }
+
 .Feedback__author-name {
     font-weight: 500;
     font-size: 13px;
@@ -82,12 +94,14 @@ body {
     color: #FFFFFF;
     margin: 17px 37px 10px;
 }
+
 .Feedback__author-face {
     width: 75px;
     height: 50px;
     position: relative;
     margin-left: 20px;
 }
+
 .Feedback__author-face:before {
     position: absolute;
     content: '';
@@ -97,6 +111,7 @@ body {
     right: 100%;
 
 }
+
 .Feedback__button {
     min-width: 95px;
     width: fit-content;
@@ -118,17 +133,21 @@ body {
     line-height: calc(100% - 3px);
     padding: 0;
 }
+
 .Feedback__button-prev svg {
     transform: rotateY(180deg);
 }
+
 .Feedback__button-hover:hover {
     border-width: 2px;
-    border-color:#FFEE53;
+    border-color: #FFEE53;
 
 }
+
 .Feedback__button-hover:hover path {
     fill: #FFEE53;
 }
+
 .Feedback__line {
     position: absolute;
     width: calc(100% - (75px * 2));
