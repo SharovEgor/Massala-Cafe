@@ -5,22 +5,21 @@ body {
 .Instagram {
     overflow-x: hidden;
 }
+
 .content {
     max-width: 900px;
     width: 100%;
     margin: 0 auto;
 }
-.A321{
-    /*display: flex;*/
+
+.Instagram__container {
     display: flex;
     align-items: flex-end;
     position: relative;
+    left: 72px;
 }
-.Instagram__container {
-   /* display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    min-height: 270px;*/
+
+.Instagram__title {
     display: inline-flex;
     flex-direction: column;
     justify-content: space-between;
@@ -30,13 +29,8 @@ body {
     height: 100%;
     width: 1em;
 }
-.Instagram__title {
-/*    font-family: 'JOURNALISM';
-    font-size: 24px;
-    transform: rotate(90deg);
-    transform-origin: left bottom;
-    position: relative;
-    left: 8px;*/
+
+.Instagram__text {
     font-family: 'JOURNALISM';
     font-size: 24px;
     transform: rotate(90deg);
@@ -48,17 +42,8 @@ body {
     white-space: nowrap;
     vertical-align: bottom;
 }
-.Instagram__title:before {
-/*    content: "";
-    position: absolute;
-    width: 40px;
-    height: 2px;
-    background-color: #FFEE54;
-    left: -60px;
-    margin-top: auto;
-    margin-bottom: auto;
-    top: 0;
-    bottom: 0;*/
+
+.Instagram__text:before {
     content: "";
     position: absolute;
     width: 40px;
@@ -67,6 +52,7 @@ body {
     left: -60px;
     top: 10px;
 }
+
 .Instagram__link {
     display: block;
     padding: 11px;
@@ -76,8 +62,31 @@ body {
     width: 40px;
     height: 40px;
 }
+
 .Instagram__link img {
     width: 16px;
     filter: brightness(0);
 }
 
+.Instagram__button {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 70px;
+}
+
+.Instagram__button-prev, .Instagram__button-next {
+    background-color: transparent;
+    border: none;
+}
+
+.Instagram__button-prev svg {
+    transform: rotateY(180deg);
+}
+
+.Instagram__button-prev {
+    margin-right: 50px;
+}
+
+.Instagram__button-prev:hover path, .Instagram__button-next:hover path {
+    fill: #FFEE53;
+}
