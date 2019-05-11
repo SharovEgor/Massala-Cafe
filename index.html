@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <title>Кафе Массалы</title>
@@ -9,6 +9,28 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500&amp;subset=cyrillic" rel="stylesheet">
 </head>
 <body>
+    <section class="Map">
+        <div class="Map__container">
+            <img class="Map__image" id="map" src="img/map.jpg" alt="">
+            <div class="Map__contact">
+                <a href="tel: 89156516301" class="Map__tel"><img src="img/tel-icon.svg" alt="">+7 915 651 63 01</a>
+                <a href="mailto: masalli@gmail.com" class="Map__email"><img src="img/email-icon.svg" alt="">masalli@gmail.com</a>
+            </div>
+            <div class="Map__modal">
+                <form action="" method="post">
+                    <h5 class="Map__title">Свяжись с нами</h5>
+                    <input class="Map__input" name="user_name" type="text" placeholder="ФИО">
+                    <input class="Map__input" name="user_email" type="email" placeholder="E-mail">
+                    <input class="Map__input" name="user_phone" type="tel" placeholder="Телефон">
+                    <input class="Map__input Map__input-mail" name="user_mail" type="text" placeholder="Сообщение">
+                    <button class="Map__button">Отправить</button>
+                </form>
+            </div>
+        </div>
 
+    </section>
+    <!--<script src="openseadragon/openseadragon.min.js"></script>-->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>

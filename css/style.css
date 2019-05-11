@@ -1,3 +1,115 @@
 body {
     font-family: 'Montserrat', sans-serif;
 }
+
+.content {
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/*Start section map*/
+.Map__container {
+    width: 100%;
+    max-width: 1280px;
+    height: 100vh;
+    min-height: 450px;
+    max-height: 510px;
+    margin: 0 auto;
+    overflow: hidden;
+    border: 1px solid red;
+    position: relative;
+}
+
+.Map__contact {
+    position: absolute;
+    bottom: 80px;
+    left: 210px;
+    display: flex;
+    flex-direction: column;
+}
+
+.Map__tel {
+    font-size: 16px;
+    letter-spacing: 0.1em;
+    color: #ffff;
+    margin-bottom: 20px;
+    text-decoration: none;
+}
+
+.Map__tel img {
+    margin-right: 20px;
+}
+
+.Map__email {
+    font-size: 16px;
+    letter-spacing: 0.1em;
+    color: #ffff;
+    text-decoration: none;
+}
+
+.Map__email img {
+    margin-right: 20px;
+}
+
+.Map__modal {
+    width: fit-content;
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    right: 190px;
+}
+
+.Map__modal form * {
+    display: block;
+}
+
+.Map__modal form {
+    margin: 0 40px;
+    padding-bottom: 20px;
+}
+
+.Map__title {
+    font-family: 'JOURNALISM';
+    font-size: 46px;
+    margin: 0 53px 42px;
+    padding-top: 30px;
+    position: relative;
+}
+
+.Map__title:after {
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 80%;
+    background-color: #FFEE54;
+    bottom: -10px;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+}
+
+.Map__input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #BBBBBB;
+    margin-bottom: 30px;
+    width: 100%;
+    color: #BBBBBB;
+}
+
+.Map__input-mail {
+    height: 80px;
+}
+
+.Map__button {
+    width: 140px;
+    height: 60px;
+    font-size: 16px;
+    padding: 16px 18px;
+    background-color: #FFEE53;
+    border: none;
+}
+
+/*End section map*/
+
