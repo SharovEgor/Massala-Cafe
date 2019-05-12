@@ -1,41 +1,39 @@
-var map = document.getElementById('map');
+window.addEventListener('load', () => {
+    interact('#map')
+      .draggable({
+          // enable inertial throwing
+          inertia: {
+              resistance: 30,
+              minSpeed: 200,
+              endSpeed: 100,
+          },
+          // enable autoScroll
+          autoScroll: true,
+          // keep the element within the area of it's parent
+          modifiers: [
+              interact.modifiers.restrict({
+                  restriction: 'parent',
+                  endOnly: true,
+                  elementRect: { top: 0, left: 0, bottom: 1, right: 1 }
+              })
+          ],
+          // call this function on every dragmove event
+          onmove: dragMoveListener,
+      });
 
-map.onmousedown = function (e) {
+    function dragMoveListener (event) {
+        const target = event.target,
+          // keep the dragged position in the data-x/data-y attributes
+          x = (parseFloat(target.getAttribute('data-x')) || 0) + event.dx,
+          y = (parseFloat(target.getAttribute('data-y')) || 0) + event.dy;
 
-    var coords = getCoords(map);
-    var shiftX = e.pageX - coords.left;
-    var shiftY = e.pageY - coords.top;
+        // translate the element
+        target.style.webkitTransform =
+          target.style.transform =
+            'translate(' + x + 'px, ' + y + 'px)';
 
-    map.style.position = 'absolute';
-    // document.body.appendChild(map);
-    moveAt(e);
-
-    map.style.zIndex = 0; // над другими элементами
-
-    function moveAt(e) {
-        map.style.left = e.pageX - shiftX + 'px';
-        map.style.top = e.pageY - shiftY + 'px';
+        // update the position attributes
+        target.setAttribute('data-x', x);
+        target.setAttribute('data-y', y);
     }
-
-    document.onmousemove = function (e) {
-        moveAt(e);
-    };
-
-    map.onmouseup = function () {
-        document.onmousemove = null;
-        map.onmouseup = null;
-    };
-
-}
-
-map.ondragstart = function () {
-    return false;
-};
-
-function getCoords(elem) {   // кроме IE8-
-    var box = elem.getBoundingClientRect();
-    return {
-        top: box.top + pageYOffset,
-        left: box.left + pageXOffset
-    };
-}
+});
