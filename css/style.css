@@ -16,12 +16,14 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    max-width: 1120px;
+    margin: auto;
 }
 .header__logo {
     width: calc(257px - 10px);
     height: calc(100px - 10px);
 }
-.menu button{
+.menu__button{
     cursor: pointer;
     background: transparent;
     border: 0;
@@ -34,6 +36,12 @@ nav {
     line-height: normal;
     color: #FFFFFF;
 }
+.menu__button:hover{
+    color: #FFEE53;
+}
+.menu__contact{
+    margin-right: 0;
+}
 .main-screen {
     display: flex;
     flex-direction: column;
@@ -44,7 +52,7 @@ nav {
 .main-screen__title1 {
     font-family: 'JOURNALISM';
     font-size: 150px;
-    line-height: 120px;
+    line-height: 100%;
     letter-spacing: 0.3em;
     color: #FFFFFF;
     margin-right: -0.35em;
@@ -77,13 +85,16 @@ nav {
 }
 .main-screen__button:hover {
     cursor: pointer;
+    color: #FFEE53;
+    border-color: #FFEE53;
 }
 .social-block {
     display: flex;
     justify-content: flex-end;
-    margin-top: 80px;
+    margin: 80px auto auto;
     padding-bottom: 100px;
-    margin-right: 80px;
+    padding-right: 80px;
+    max-width: 1200px;
 }
 .social-block__vk {
     margin-right: 40px;
