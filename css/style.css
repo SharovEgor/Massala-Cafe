@@ -100,3 +100,51 @@ nav {
     margin-right: 40px;
 }
 /*End header*/
+/*Start About Us*/
+.About-Us {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    min-height: 415px;
+}
+.About-Us__Shadow-box {
+    position: absolute;
+    background: #FFFFFF;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1), -5px 0px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    max-width: 900px;
+    height: 460px;
+    margin-bottom: 150px;
+}
+.Shadow-box__img img{
+    width: 460px;
+    height: 460px;
+}
+.Shadow-box__text-box {
+    margin: 50px 45px 95px 5px;
+    color: #000000;
+}
+.text-box__headline {
+    font-family: 'JOURNALISM';
+    font-size: 46px;
+    line-height: 37px;
+    margin-bottom: 47px;
+    position: relative;
+}
+.text-box__headline:after {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 2px;
+    background-color: #FFEE54;
+    left: 0;
+    top: 52px;
+}
+.text-box__description {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 26px;
+}
+/*End About Us*/
+
