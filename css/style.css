@@ -109,7 +109,6 @@ nav {
 }
 .About-Us__Shadow-box {
     position: absolute;
-    top: -46px;
     background: #FFFFFF;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1), -5px 0px 10px rgba(0, 0, 0, 0.1);
     display: flex;
