@@ -178,7 +178,7 @@ nav {
     overflow: hidden;
 
 }
-.slick-list {
+.Menu__slider .slick-list {
     overflow: visible;
 }
 .Menu__item {
