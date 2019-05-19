@@ -1,13 +1,273 @@
 body {
     font-family: 'Montserrat', sans-serif;
 }
-
 .content {
     max-width: 900px;
     width: 100%;
     margin: 0 auto;
 }
+/*Start header*/
+header {
+    background: url("../img/main.jpg") no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    position: relative;
+}
+nav {
+    top: 38px;
+    right: 35px;
+    left: 80px;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1120px;
+    margin: auto;
+}
+.header__logo {
+    width: calc(257px - 10px);
+    height: calc(100px - 10px);
+}
+.menu__button{
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    padding-left: 0;
+    padding-right: 45px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: normal;
+    color: #FFFFFF;
+}
+.menu__button:hover{
+    color: #FFEE53;
+}
+.menu__contact{
+    margin-right: 0;
+}
+.main-screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding-top: 210px;
+}
+.main-screen__title1 {
+    font-family: 'JOURNALISM';
+    font-size: 150px;
+    line-height: 100%;
+    letter-spacing: 0.3em;
+    color: #FFFFFF;
+    margin-right: -0.35em;
+}
+.main-screen__img {
+    margin: 20px 0;
+}
+.main-screen__title2 {
+    font-family: 'JOURNALISM';
+    font-size: 77px;
+    line-height: 62px;
+    color: #FFFFFF;
+}
 
+.main-screen__button {
+    border: 3px solid #FFFFFF;
+    color: #FFFFFF;
+    font-family: 'rokkitt';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: normal;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: transparent;
+    padding: 8px 22px;
+    width: 200px;
+    margin-top: 55px;
+    outline: 0;
+}
+.main-screen__button:hover {
+    cursor: pointer;
+    color: #FFEE53;
+    border-color: #FFEE53;
+}
+.social-block {
+    display: flex;
+    justify-content: flex-end;
+    margin: 80px auto auto;
+    padding-bottom: 100px;
+    padding-right: 80px;
+    max-width: 1200px;
+}
+.social-block__vk {
+    margin-right: 40px;
+}
+/*End header*/
+/*Start About Us*/
+.About-Us {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    min-height: 415px;
+    margin-bottom: 150px;
+}
+.About-Us__Shadow-box {
+    position: absolute;
+    top: -45px;
+    background: #FFFFFF;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1), -5px 0px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    max-width: 900px;
+    height: 460px;
+    margin-bottom: 150px;
+}
+.Shadow-box__img img{
+    width: 460px;
+    height: 460px;
+}
+.Shadow-box__text-box {
+    margin: 50px 45px 95px 5px;
+    color: #000000;
+}
+.text-box__headline {
+    font-family: 'JOURNALISM';
+    font-size: 46px;
+    line-height: 37px;
+    margin-bottom: 47px;
+    position: relative;
+}
+.text-box__headline:after {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 2px;
+    background-color: #FFEE54;
+    left: 0;
+    top: 52px;
+}
+.text-box__description {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 26px;
+}
+/*End About Us*/
+/*Start Menu*/
+.Menu__title {
+    display: flex;
+    font-family: 'JOURNALISM';
+    font-size: 46px;
+    line-height: 37px;
+    text-align: center;
+    position: relative;
+    margin-bottom: 67px;
+}
+.Menu__title:after {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 2px;
+    background: #FFEE54;
+    bottom: -15px;
+    left: 0;
+}
+.Menu__container {
+    width: 100%;
+    overflow: hidden;
+
+}
+.slick-list {
+    overflow: visible;
+}
+.Menu__item {
+    max-width: 380px;
+    padding: 30px;
+    position: relative;
+}
+.Menu__slider {
+    position: relative;
+    margin-left: -30px;
+}
+/*.Menu__slider:before {
+    position: absolute;
+    content: "";
+    width: 210px;
+    height: 2px;
+    background-color: rgba(196, 196, 196, 0.6);
+    top: 138px;
+    left: -180px;
+}*/
+.Dish {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.08), -10px 0px 30px rgba(0, 0, 0, 0.08);
+}
+.Menu__item:first-child .Dish:after {
+    position: absolute;
+    content: "";
+    width: 2000px;
+    height: 2px;
+    background-color: rgba(196, 196, 196, 0.6);
+    top: 0;
+    bottom: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+    right: calc(100% - 30px);
+}
+.Dish__img {
+    margin-left: 90px;
+    margin-bottom: 15px;
+}
+.Dish__container {
+    display: flex;
+    margin-left: 25px;
+    margin-bottom: 15px;
+}
+.Dish__title {
+    font-weight: 500;
+    font-size: 16px;
+    margin-top: 15px;
+    margin-left: 25px;
+}
+.Dish__button {
+    width: 40px;
+    height: 40px;
+    font-family: 'Montserrat';
+    font-size: 40px;
+    line-height: calc(100% - 1px);
+    background: transparent;
+    border-radius: 100%;
+    border: 1px solid #000;
+    box-sizing: border-box;
+    outline: none;
+    padding: 0 8px;
+}
+.Dish__button:hover {
+    color: #fff;
+    border-color: #FFEE54;
+    background: #FFEE54;
+    box-shadow: 0px 0px 0px 5px rgba(255,238,84,0.5);
+}
+.Menu__slider-button {
+    margin-top: 40px;
+    display: flex;
+    justify-content: flex-end;
+}
+.Menu__slider-button button {
+    background-color: transparent;
+    border: none;
+}
+.Menu__slider-button button:hover path{
+    fill: #FFEE54;
+}
+.Menu__button-prev {
+    transform: rotateY(180deg);
+    margin-right: 50px;
+}
+/*End Menu*/
+/*Start Feedback*/
 .Feedback__title {
     font-family: 'JOURNALISM';
     font-size: 46px;
@@ -159,3 +419,4 @@ body {
     margin-left: auto;
     bottom: 61px;
 }
+/*End Feedback*/
