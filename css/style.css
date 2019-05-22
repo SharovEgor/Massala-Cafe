@@ -17,7 +17,6 @@ body {
     max-height: 510px;
     margin: 0 auto;
     overflow: hidden;
-    border: 1px solid red;
     position: relative;
 }
 
