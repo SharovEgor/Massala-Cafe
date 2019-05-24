@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <title>Кафе Массалы</title>
@@ -173,11 +173,38 @@
             </div>
         </div>
         <div class="Instagram__button content">
-            <button class="Instagram__button-prev">
+           <button class="Instagram__button-prev">
+                <svg class="" width="17" height="27" viewBox="0 0 17 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15.8242 14.7461C16.1172 14.5117 16.293 14.1602 16.293 13.75C16.293 13.3984 16.1172 13.0469 15.8242 12.7539L4.45703 1.38672C4.16406 1.15234 3.8125 0.976562 3.46094 0.976562C3.05078 0.976562 2.69922 1.15234 2.46484 1.38672L1.17578 2.67578C0.882812 2.96875 0.707031 3.32031 0.707031 3.67188C0.707031 4.08203 0.824219 4.43359 1.11719 4.66797L10.1992 13.75L1.11719 22.832C0.824219 23.125 0.707031 23.4766 0.707031 23.8281C0.707031 24.2383 0.882812 24.5898 1.17578 24.8242L2.46484 26.1133C2.69922 26.4062 3.05078 26.5234 3.46094 26.5234C3.8125 26.5234 4.16406 26.4062 4.45703 26.1133L15.8242 14.7461Z" fill="#DCDCDC"/>
+                </svg>
+            </button>
             <button class="Instagram__button-next">
-
+                <svg class="" width="17" height="27" viewBox="0 0 17 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15.8242 14.7461C16.1172 14.5117 16.293 14.1602 16.293 13.75C16.293 13.3984 16.1172 13.0469 15.8242 12.7539L4.45703 1.38672C4.16406 1.15234 3.8125 0.976562 3.46094 0.976562C3.05078 0.976562 2.69922 1.15234 2.46484 1.38672L1.17578 2.67578C0.882812 2.96875 0.707031 3.32031 0.707031 3.67188C0.707031 4.08203 0.824219 4.43359 1.11719 4.66797L10.1992 13.75L1.11719 22.832C0.824219 23.125 0.707031 23.4766 0.707031 23.8281C0.707031 24.2383 0.882812 24.5898 1.17578 24.8242L2.46484 26.1133C2.69922 26.4062 3.05078 26.5234 3.46094 26.5234C3.8125 26.5234 4.16406 26.4062 4.45703 26.1133L15.8242 14.7461Z" fill="#DCDCDC"/>
+                </svg>
+            </button>
+      </div>
+    </section>
+    <section class="Map" id="map-wrapper">
+        <img class="Map__image draggable" id="map" src="img/map.png" alt="">
+        <div class="Map__contact">
+            <a href="tel: 89156516301" class="Map__tel"><img src="img/tel-icon.svg" alt="">+7 915 651 63 01</a>
+            <a href="mailto: masalli@gmail.com" class="Map__email"><img src="img/email-icon.svg" alt="">masalli@gmail.com</a>
+        </div>
+        <div class="Map__modal">
+            <form action="" method="post">
+                <h5 class="Map__title">Свяжись с нами</h5>
+                <input class="Map__input" name="user_name" type="text" placeholder="ФИО">
+                <input class="Map__input" name="user_email" type="email" placeholder="E-mail">
+                <input class="Map__input" name="user_phone" type="tel" placeholder="Телефон">
+                <input class="Map__input Map__input-mail" name="user_mail" type="text" placeholder="Сообщение">
+                <button class="Map__button">Отправить</button>
+            </form>
+        </div>
+    </section>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script type="text/javascript" src="js/draggin.min.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
