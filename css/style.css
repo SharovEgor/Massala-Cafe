@@ -2,21 +2,21 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
-.Instagram {
-    overflow-x: hidden;
-}
-
 .content {
     max-width: 900px;
     width: 100%;
     margin: 0 auto;
 }
 
+.Instagram {
+    position: relative;
+}
+
 .Instagram__container {
     display: flex;
     align-items: flex-end;
-    position: relative;
-    left: 72px;
+    width: calc(100% + (100vw - 23px - 100%) / 2);
+    overflow-x: hidden;
 }
 
 .Instagram__title {
@@ -41,6 +41,10 @@ body {
     position: relative;
     white-space: nowrap;
     vertical-align: bottom;
+}
+
+.Instagram__slider {
+    width: 100%;
 }
 
 .Instagram__text:before {

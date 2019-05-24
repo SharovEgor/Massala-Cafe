@@ -1,6 +1,6 @@
 $(document).ready(function () {
     $('#Instagram-gallery .Instagram__slider').slick({
-        slidesToShow: 4,
+        slidesToShow: 1,
         slidesToScroll: 1,
         infinite: false,
         variableWidth: true,
