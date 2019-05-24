@@ -5,10 +5,186 @@
     <title>Кафе Массалы</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="slick/slick.css">
+    <link rel="stylesheet" href="slick/slick-theme.css">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500&amp;subset=cyrillic" rel="stylesheet">
 </head>
 <body>
+    <header>
+        <nav>
+            <a class="logo" href=""><img class="header__logo" src="img/Logo.svg"></a>
+            <div class="menu">
+                <button class="menu__button menu__about-us">О нас</button>
+                <button class="menu__button menu__price-list">Меню</button>
+                <button class="menu__button menu__review">Отзывы</button>
+                <button class="menu__button menu__gallery">Галерея</button>
+                <button class="menu__button menu__contact">Контакты</button>
+            </div>
+        </nav>
+        <div class="main-screen">
+            <h1 class="main-screen__title1">Вкус</h1>
+            <img class="main-screen__img" src="img/tracery.svg" alt="">
+            <h2 class="main-screen__title2">как искуство</h2>
+            <button class="main-screen__button">забронировать столик</button>
+        </div>
+        <div class="social-block">
+            <a class="social-block__vk" href="https://vk.com/public178969939" target="_blank"><img src="img/vk-icon.svg" alt=""></a>
+            <a class="social-block__inst" href="https://www.instagram.com/cafe__masalli_2019/" target="_blank"><img src="img/inst-icon.svg" alt=""></a>
+        </div>
+    </header>
+    <section class="About-Us">
+        <div class="About-Us__Shadow-box">
+            <div class="Shadow-box__img">
+                <img src="img/AboutUs-img.jpg" alt="">
+            </div>
+            <div class="Shadow-box__text-box">
+                <h3 class="text-box__headline">Наше кафе</h3>
+                <p class="text-box__description">
+                    Мы славимся лучшим исполнением азербайджанской национальной кухни: сочные мясные блюда, наваристые бозбаши, кебабы, рассыпчатые ароматные пловы - каждый найдет блюдо по душе, а прекрасная атмсофера и демократичные цены дополнят удовольствие от еды
+                </p>
+                
+            </div>
+        </div>
+    </section>
+    <section class="Menu" id="Menu-catalog">
+        <h3 class="Menu__title content">Меню</h3>
+        <div class="Menu__container">
+            <div class="content">
+            <div class="Menu__slider">
+                <div class="Menu__item">
+                    <div class="Dish">
+                        <img class="Dish__img" src="img/lamb-skewers.jpg" alt="">
+                        <div class="Dish__container">
+                            <button class="Dish__button">+</button>
+                            <p class="Dish__title">Шашлык из баранины</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="Menu__item">
+                    <div class="Dish">
+                        <img class="Dish__img" src="img/IMG_5255.jpg" alt="">
+                        <div class="Dish__container">
+                        <button class="Dish__button">+</button>
+                        <p class="Dish__title">Шашлык из баранины</p>
+                    </div>
+                    </div>
+                </div>
+                <div class="Menu__item">
+                    <div class="Dish">
+                        <img class="Dish__img" src="img/IMG_5255.jpg" alt="">
+                        <div class="Dish__container">
+                            <button class="Dish__button">+</button>
+                            <p class="Dish__title">Шашлык из баранины</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="Menu__item">
+                    <div class="Dish">
+                        <img class="Dish__img" src="img/lamb-skewers.jpg" alt="">
+                        <div class="Dish__container">
+                            <button class="Dish__button">+</button>
+                            <p class="Dish__title">Шашлык из баранины</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="Menu__slider-button content">
+            <button class="Menu__button-prev">
+                <svg class="" width="17" height="27" viewBox="0 0 17 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15.8242 14.7461C16.1172 14.5117 16.293 14.1602 16.293 13.75C16.293 13.3984 16.1172 13.0469 15.8242 12.7539L4.45703 1.38672C4.16406 1.15234 3.8125 0.976562 3.46094 0.976562C3.05078 0.976562 2.69922 1.15234 2.46484 1.38672L1.17578 2.67578C0.882812 2.96875 0.707031 3.32031 0.707031 3.67188C0.707031 4.08203 0.824219 4.43359 1.11719 4.66797L10.1992 13.75L1.11719 22.832C0.824219 23.125 0.707031 23.4766 0.707031 23.8281C0.707031 24.2383 0.882812 24.5898 1.17578 24.8242L2.46484 26.1133C2.69922 26.4062 3.05078 26.5234 3.46094 26.5234C3.8125 26.5234 4.16406 26.4062 4.45703 26.1133L15.8242 14.7461Z" fill="#DCDCDC"/>
+                </svg>
+            </button>
+            <button class="Menu__button-next">
+                <svg class="" width="17" height="27" viewBox="0 0 17 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15.8242 14.7461C16.1172 14.5117 16.293 14.1602 16.293 13.75C16.293 13.3984 16.1172 13.0469 15.8242 12.7539L4.45703 1.38672C4.16406 1.15234 3.8125 0.976562 3.46094 0.976562C3.05078 0.976562 2.69922 1.15234 2.46484 1.38672L1.17578 2.67578C0.882812 2.96875 0.707031 3.32031 0.707031 3.67188C0.707031 4.08203 0.824219 4.43359 1.11719 4.66797L10.1992 13.75L1.11719 22.832C0.824219 23.125 0.707031 23.4766 0.707031 23.8281C0.707031 24.2383 0.882812 24.5898 1.17578 24.8242L2.46484 26.1133C2.69922 26.4062 3.05078 26.5234 3.46094 26.5234C3.8125 26.5234 4.16406 26.4062 4.45703 26.1133L15.8242 14.7461Z" fill="#DCDCDC"/>
+                </svg>
+            </button>
+        </div>
+    </section>
+    <section class="Feedback" id="Feedback">
+        <h4 class="Feedback__title content">Что говорят о нас посетители</h4>
+        <div class="Feedback__container content">
+            <div class="Feedback__box">
+                <div class="Feedback__quote">“</div>
+                <div class="Feedback__quote Feedback__quote-small">“</div>
+                <div class="Feedback__slider">
+                    <div>
+                        <div class="Feedback__slide">
+                        <p class="Feedback__text">
+                            Прекрасный интерьер вкупе с потрясающей кухней, дарят незабываемые ощущения. Впечатления остались замечательные: все блюда были необычайно вкусны и поданы в кратчайший срок.
+                        </p>
+                        <div class="Feedback__author">
+                            <div class="Feedback__author-face">
+                                <img src="img/feedback-face1-7550.jpg" alt="">
+                            </div>
+                            <p class="Feedback__author-name">Антон Винокуров</p>
+                        </div>
+                    </div>
+                    </div>
+                    <div>
+                        <div class="Feedback__slide">
+                        <p class="Feedback__text">
+                            Прекрасный интерьер вкупе с потрясающей кухней, дарят незабываемые ощущения. Впечатления остались замечательные: все блюда были необычайно вкусны и поданы в кратчайший срок.
+                        </p>
+                        <div class="Feedback__author">
+                            <div class="Feedback__author-face">
+                                <img src="img/feedback-face1-7550.jpg" alt="">
+                            </div>
+                            <p class="Feedback__author-name">Антон Винокуров</p>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="Feedback__button">
+                    <button class="Feedback__button-prev Feedback__button-hover">
+                        <svg width="11" height="16" viewBox="0 0 17 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15.8242 14.7461C16.1172 14.5117 16.293 14.1602 16.293 13.75C16.293 13.3984 16.1172 13.0469 15.8242 12.7539L4.45703 1.38672C4.16406 1.15234 3.8125 0.976562 3.46094 0.976562C3.05078 0.976562 2.69922 1.15234 2.46484 1.38672L1.17578 2.67578C0.882812 2.96875 0.707031 3.32031 0.707031 3.67188C0.707031 4.08203 0.824219 4.43359 1.11719 4.66797L10.1992 13.75L1.11719 22.832C0.824219 23.125 0.707031 23.4766 0.707031 23.8281C0.707031 24.2383 0.882812 24.5898 1.17578 24.8242L2.46484 26.1133C2.69922 26.4062 3.05078 26.5234 3.46094 26.5234C3.8125 26.5234 4.16406 26.4062 4.45703 26.1133L15.8242 14.7461Z" fill="#FFFFFF"/>
+                        </svg>
+                    </button>
+                    <button class="Feedback__button-next Feedback__button-hover">
+                        <svg width="11" height="16" viewBox="0 0 17 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15.8242 14.7461C16.1172 14.5117 16.293 14.1602 16.293 13.75C16.293 13.3984 16.1172 13.0469 15.8242 12.7539L4.45703 1.38672C4.16406 1.15234 3.8125 0.976562 3.46094 0.976562C3.05078 0.976562 2.69922 1.15234 2.46484 1.38672L1.17578 2.67578C0.882812 2.96875 0.707031 3.32031 0.707031 3.67188C0.707031 4.08203 0.824219 4.43359 1.11719 4.66797L10.1992 13.75L1.11719 22.832C0.824219 23.125 0.707031 23.4766 0.707031 23.8281C0.707031 24.2383 0.882812 24.5898 1.17578 24.8242L2.46484 26.1133C2.69922 26.4062 3.05078 26.5234 3.46094 26.5234C3.8125 26.5234 4.16406 26.4062 4.45703 26.1133L15.8242 14.7461Z" fill="#FFFFFF"/>
+                        </svg>
+                    </button>
+                </div>
+                <div class="Feedback__line"></div>
+            </div>
+        </div>
+    </section>
+    <section id="Instagram-gallery">
+        <div class="Instagram content">
+            <div class="Instagram__container">
+                <div class="Instagram__title">
+                    <h4 class="Instagram__text">Instagram Галерея</h4>
+                    <a class="Instagram__link" href=""><img src="img/inst-icon.svg" alt=""></a>
+                </div>
+                <div class="Instagram__slider">
+                    <div><img src="img/inst-slider/item1.jpg" alt=""></div>
+                    <div><img src="img/inst-slider/item2.jpg" alt=""></div>
+                    <div><img src="img/inst-slider/item2.jpg" alt=""></div>
+                    <div><img src="img/inst-slider/item2.jpg" alt=""></div>
+                    <div><img src="img/inst-slider/item2.jpg" alt=""></div>
+                    <div><img src="img/inst-slider/item3.jpg" alt=""></div>
+                    <div><img src="img/inst-slider/item3.jpg" alt=""></div>
+                </div>
+            </div>
+        </div>
+        <div class="Instagram__button content">
+           <button class="Instagram__button-prev">
+                <svg class="" width="17" height="27" viewBox="0 0 17 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15.8242 14.7461C16.1172 14.5117 16.293 14.1602 16.293 13.75C16.293 13.3984 16.1172 13.0469 15.8242 12.7539L4.45703 1.38672C4.16406 1.15234 3.8125 0.976562 3.46094 0.976562C3.05078 0.976562 2.69922 1.15234 2.46484 1.38672L1.17578 2.67578C0.882812 2.96875 0.707031 3.32031 0.707031 3.67188C0.707031 4.08203 0.824219 4.43359 1.11719 4.66797L10.1992 13.75L1.11719 22.832C0.824219 23.125 0.707031 23.4766 0.707031 23.8281C0.707031 24.2383 0.882812 24.5898 1.17578 24.8242L2.46484 26.1133C2.69922 26.4062 3.05078 26.5234 3.46094 26.5234C3.8125 26.5234 4.16406 26.4062 4.45703 26.1133L15.8242 14.7461Z" fill="#DCDCDC"/>
+                </svg>
+            </button>
+            <button class="Instagram__button-next">
+                <svg class="" width="17" height="27" viewBox="0 0 17 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15.8242 14.7461C16.1172 14.5117 16.293 14.1602 16.293 13.75C16.293 13.3984 16.1172 13.0469 15.8242 12.7539L4.45703 1.38672C4.16406 1.15234 3.8125 0.976562 3.46094 0.976562C3.05078 0.976562 2.69922 1.15234 2.46484 1.38672L1.17578 2.67578C0.882812 2.96875 0.707031 3.32031 0.707031 3.67188C0.707031 4.08203 0.824219 4.43359 1.11719 4.66797L10.1992 13.75L1.11719 22.832C0.824219 23.125 0.707031 23.4766 0.707031 23.8281C0.707031 24.2383 0.882812 24.5898 1.17578 24.8242L2.46484 26.1133C2.69922 26.4062 3.05078 26.5234 3.46094 26.5234C3.8125 26.5234 4.16406 26.4062 4.45703 26.1133L15.8242 14.7461Z" fill="#DCDCDC"/>
+                </svg>
+            </button>
+      </div>
+    </section>
     <section class="Map" id="map-wrapper">
         <img class="Map__image draggable" id="map" src="img/map.png" alt="">
         <div class="Map__contact">
@@ -26,6 +202,8 @@
             </form>
         </div>
     </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
     <script type="text/javascript" src="js/draggin.min.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
 </body>
