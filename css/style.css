@@ -2,6 +2,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     padding: 50px;
 }
+
 .content {
     max-width: 900px;
     width: 100%;
@@ -617,4 +618,41 @@ nav {
 }
 
 /*End section map*/
+/*Start footer*/
+footer{
+    background: url("../img/footer-bg.jpg") no-repeat ;
+    background-size: cover;
 
+}
+.Footer__logo{
+    margin: auto;
+    margin-top: 110px;
+    width: 334px;
+    height: 130px;
+}
+.Footer__logo img {
+    width: 100%;
+    filter: brightness(0);
+}
+.Footer__container {
+    display: flex;
+    flex-direction: column;
+}
+.Footer__social {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 90px;
+    filter: brightness(0);
+}
+.Footer__vk {
+    margin-right: calc(56px/2);
+}
+.Footer__inst {
+    margin-left: calc(56px/2);
+}
+.Footer__text {
+    margin-left: 20px;
+    padding-bottom: 10px;
+}
+/*End footer*/
