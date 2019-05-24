@@ -1,5 +1,6 @@
 body {
     font-family: 'Montserrat', sans-serif;
+    padding: 50px;
 }
 
 .content {
@@ -20,16 +21,9 @@ body {
     position: relative;
 }
 
-/*указываем область, внутри которой изображение будет ограничено для переноса*/
-.Map__image-container {
-    width: 180%;
-    height: 240%;
-    left: -40%;
-    top: -70%;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.Map__image {
+    width: 3562px;
+    height: 5182px;
 }
 
 .Map__contact {

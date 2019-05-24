@@ -1,39 +1,50 @@
-window.addEventListener('load', () => {
-    interact('#map')
-      .draggable({
-          // enable inertial throwing
-          inertia: {
-              resistance: 30,
-              minSpeed: 200,
-              endSpeed: 100,
-          },
-          // enable autoScroll
-          autoScroll: true,
-          // keep the element within the area of it's parent
-          modifiers: [
-              interact.modifiers.restrict({
-                  restriction: 'parent',
-                  endOnly: true,
-                  elementRect: { top: 0, left: 0, bottom: 1, right: 1 }
-              })
-          ],
-          // call this function on every dragmove event
-          onmove: dragMoveListener,
-      });
+window.addEventListener('load', function () {
+  const map = document.getElementById('map');
 
-    function dragMoveListener (event) {
-        const target = event.target,
-          // keep the dragged position in the data-x/data-y attributes
-          x = (parseFloat(target.getAttribute('data-x')) || 0) + event.dx,
-          y = (parseFloat(target.getAttribute('data-y')) || 0) + event.dy;
-
-        // translate the element
-        target.style.webkitTransform =
-          target.style.transform =
-            'translate(' + x + 'px, ' + y + 'px)';
-
-        // update the position attributes
-        target.setAttribute('data-x', x);
-        target.setAttribute('data-y', y);
+  function adaptiveMap() {
+    if (window.innerWidth < 1000) {
+      map.style.transform = "translate(-1635px, -2328px)";
+    } if (window.innerWidth < 800) {
+      map.style.transform = "translate(-1635px, -2328px)";
+    } if (window.innerWidth < 400) {
+      map.style.transform = "translate(-1635px, -2328px)";
+    } else {
+      map.style.transform = "translate(-1635px, -2328px)";
     }
+  }
+
+  adaptiveMap();
+  const mapWrapper = document.getElementById('map-wrapper');
+
+  const config = {
+    maxX: -(mapWrapper.offsetWidth - map.offsetWidth),
+    minX: 0,
+    maxY: 0,
+    minY:  map.offsetHeight - mapWrapper.offsetHeight,
+  };
+
+  window.addEventListener('mousemove', function () {
+    const transform = map.style.transform;
+    const transformMatched = transform.match(/[-0-9]+/g);
+
+    if (transformMatched) {
+      const x = -Number(transformMatched[0]);
+      const y = -Number(transformMatched[1]);
+
+      let newX = x;
+      let newY = y;
+
+      if (x > config.maxX) {
+        newX = config.maxX;
+      } else if (x < config.minX) {
+        newX = config.minX;
+      }
+      if (y < config.maxY) {
+        newY = config.maxY;
+      } else if (y > config.minY) {
+        newY = config.minY;
+      }
+      map.style.transform = "translate(-" + newX + "px, -" + newY + "px)";
+    }
+  });
 });
