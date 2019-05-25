@@ -1,6 +1,5 @@
 body {
     font-family: 'Montserrat', sans-serif;
-    padding: 50px;
 }
 
 .content {
@@ -8,6 +7,11 @@ body {
     width: 100%;
     margin: 0 auto;
 }
+
+button {
+    cursor: pointer;
+}
+
 /*Start header*/
 header {
     background: url("../img/main.jpg") no-repeat;
@@ -15,6 +19,7 @@ header {
     background-size: cover;
     position: relative;
 }
+
 nav {
     top: 38px;
     right: 35px;
@@ -26,11 +31,13 @@ nav {
     max-width: 1120px;
     margin: auto;
 }
+
 .header__logo {
     width: calc(257px - 10px);
     height: calc(100px - 10px);
 }
-.menu__button{
+
+.menu__button {
     cursor: pointer;
     background: transparent;
     border: 0;
@@ -43,12 +50,15 @@ nav {
     line-height: normal;
     color: #FFFFFF;
 }
-.menu__button:hover{
+
+.menu__button:hover {
     color: #FFEE53;
 }
-.menu__contact{
+
+.menu__contact {
     margin-right: 0;
 }
+
 .main-screen {
     display: flex;
     flex-direction: column;
@@ -56,6 +66,7 @@ nav {
     width: 100%;
     padding-top: 210px;
 }
+
 .main-screen__title1 {
     font-family: 'JOURNALISM';
     font-size: 150px;
@@ -64,9 +75,11 @@ nav {
     color: #FFFFFF;
     margin-right: -0.35em;
 }
+
 .main-screen__img {
     margin: 20px 0;
 }
+
 .main-screen__title2 {
     font-family: 'JOURNALISM';
     font-size: 77px;
@@ -90,11 +103,13 @@ nav {
     margin-top: 55px;
     outline: 0;
 }
+
 .main-screen__button:hover {
     cursor: pointer;
     color: #FFEE53;
     border-color: #FFEE53;
 }
+
 .social-block {
     display: flex;
     justify-content: flex-end;
@@ -103,9 +118,11 @@ nav {
     padding-right: 80px;
     max-width: 1200px;
 }
+
 .social-block__vk {
     margin-right: 40px;
 }
+
 /*End header*/
 /*Start About Us*/
 .About-Us {
@@ -115,6 +132,7 @@ nav {
     min-height: 415px;
     margin-bottom: 150px;
 }
+
 .About-Us__Shadow-box {
     position: absolute;
     top: -45px;
@@ -125,14 +143,17 @@ nav {
     height: 460px;
     margin-bottom: 150px;
 }
-.Shadow-box__img img{
+
+.Shadow-box__img img {
     width: 460px;
     height: 460px;
 }
+
 .Shadow-box__text-box {
     margin: 50px 45px 95px 5px;
     color: #000000;
 }
+
 .text-box__headline {
     font-family: 'JOURNALISM';
     font-size: 46px;
@@ -140,6 +161,7 @@ nav {
     margin-bottom: 47px;
     position: relative;
 }
+
 .text-box__headline:after {
     content: "";
     position: absolute;
@@ -149,12 +171,14 @@ nav {
     left: 0;
     top: 52px;
 }
+
 .text-box__description {
     font-style: normal;
     font-weight: normal;
     font-size: 20px;
     line-height: 26px;
 }
+
 /*End About Us*/
 /*Start Menu*/
 .Menu__title {
@@ -166,6 +190,7 @@ nav {
     position: relative;
     margin-bottom: 67px;
 }
+
 .Menu__title:after {
     content: '';
     position: absolute;
@@ -175,37 +200,34 @@ nav {
     bottom: -15px;
     left: 0;
 }
+
 .Menu__container {
     width: 100%;
     overflow: hidden;
 
 }
+
 .Menu__slider .slick-list {
     overflow: visible;
 }
+
 .Menu__item {
     max-width: 380px;
     padding: 30px;
     position: relative;
 }
+
 .Menu__slider {
     position: relative;
     margin-left: -30px;
 }
-/*.Menu__slider:before {
-    position: absolute;
-    content: "";
-    width: 210px;
-    height: 2px;
-    background-color: rgba(196, 196, 196, 0.6);
-    top: 138px;
-    left: -180px;
-}*/
+
 .Dish {
     display: flex;
     flex-direction: column;
     box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.08), -10px 0px 30px rgba(0, 0, 0, 0.08);
 }
+
 .Menu__item:first-child .Dish:after {
     position: absolute;
     content: "";
@@ -218,21 +240,25 @@ nav {
     margin-bottom: auto;
     right: calc(100% - 30px);
 }
+
 .Dish__img {
     margin-left: 90px;
     margin-bottom: 15px;
 }
+
 .Dish__container {
     display: flex;
     margin-left: 25px;
     margin-bottom: 15px;
 }
+
 .Dish__title {
     font-weight: 500;
     font-size: 16px;
     margin-top: 15px;
     margin-left: 25px;
 }
+
 .Dish__button {
     width: 40px;
     height: 40px;
@@ -246,28 +272,35 @@ nav {
     outline: none;
     padding: 0 8px;
 }
+
 .Dish__button:hover {
     color: #fff;
     border-color: #FFEE54;
     background: #FFEE54;
-    box-shadow: 0px 0px 0px 5px rgba(255,238,84,0.5);
+    box-shadow: 0px 0px 0px 5px rgba(255, 238, 84, 0.5);
 }
+
 .Menu__slider-button {
     margin-top: 40px;
+    margin-bottom: 150px;
     display: flex;
     justify-content: flex-end;
 }
+
 .Menu__slider-button button {
     background-color: transparent;
     border: none;
 }
-.Menu__slider-button button:hover path{
+
+.Menu__slider-button button:hover path {
     fill: #FFEE54;
 }
+
 .Menu__button-prev {
     transform: rotateY(180deg);
     margin-right: 50px;
 }
+
 /*End Menu*/
 /*Start Feedback*/
 .Feedback__title {
@@ -421,8 +454,13 @@ nav {
     margin-left: auto;
     bottom: 61px;
 }
+
 /*End Feedback*/
 /*Start Instagram*/
+#Instagram-gallery {
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
 .Instagram {
     position: relative;
 }
@@ -460,6 +498,7 @@ nav {
 
 .Instagram__slider {
     width: 100%;
+    
 }
 
 .Instagram__text:before {
@@ -509,6 +548,7 @@ nav {
 .Instagram__button-prev:hover path, .Instagram__button-next:hover path {
     fill: #FFEE53;
 }
+
 /*End Instagram*/
 /*Start section map*/
 .Map {
@@ -619,25 +659,29 @@ nav {
 
 /*End section map*/
 /*Start footer*/
-footer{
-    background: url("../img/footer-bg.jpg") no-repeat ;
+footer {
+    background: url("../img/footer-bg.jpg") no-repeat;
     background-size: cover;
 
 }
-.Footer__logo{
+
+.Footer__logo {
     margin: auto;
     margin-top: 110px;
     width: 334px;
     height: 130px;
 }
+
 .Footer__logo img {
     width: 100%;
     filter: brightness(0);
 }
+
 .Footer__container {
     display: flex;
     flex-direction: column;
 }
+
 .Footer__social {
     display: flex;
     justify-content: center;
@@ -645,14 +689,18 @@ footer{
     margin-bottom: 90px;
     filter: brightness(0);
 }
+
 .Footer__vk {
-    margin-right: calc(56px/2);
+    margin-right: calc(56px / 2);
 }
+
 .Footer__inst {
-    margin-left: calc(56px/2);
+    margin-left: calc(56px / 2);
 }
+
 .Footer__text {
     margin-left: 20px;
     padding-bottom: 10px;
 }
+
 /*End footer*/
