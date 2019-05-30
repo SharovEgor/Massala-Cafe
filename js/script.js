@@ -20,6 +20,12 @@ $(document).ready(function () {
         prevArrow: '#Instagram-gallery .Instagram__button-prev',
         nextArrow: '#Instagram-gallery .Instagram__button-next'
     });
+    $('.menu__button, .main-screen__button').click(function () {
+        const element = $(this).attr('href');
+        const dist = $(element).offset().top;
+        $('html, body').animate({'scrollTop': dist}, 1000);
+        return false;
+    })
 });
 
 window.addEventListener('load', function () {

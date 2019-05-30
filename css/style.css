@@ -38,6 +38,7 @@ nav {
 }
 
 .menu__button {
+    text-decoration: none;
     cursor: pointer;
     background: transparent;
     border: 0;
@@ -102,6 +103,7 @@ nav {
     width: 200px;
     margin-top: 55px;
     outline: 0;
+    text-decoration: none;
 }
 
 .main-screen__button:hover {
@@ -642,10 +644,13 @@ nav {
     margin-bottom: 30px;
     width: 100%;
     color: #BBBBBB;
+    outline: none;
 }
 
 .Map__input-mail {
     height: 80px;
+    resize: none;
+    padding: 0;
 }
 
 .Map__button {
@@ -656,13 +661,16 @@ nav {
     background-color: #FFEE53;
     border: none;
 }
+.Map__button:hover {
+    box-shadow: 0px 0px 0px 5px rgba(255, 238, 84, 0.5);
+    color: #cccccc;
+}
 
 /*End section map*/
 /*Start footer*/
 footer {
     background: url("../img/footer-bg.jpg") no-repeat;
     background-size: cover;
-
 }
 
 .Footer__logo {

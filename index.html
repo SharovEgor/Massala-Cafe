@@ -13,27 +13,27 @@
 <body>
     <header>
         <nav>
-            <a class="logo" href=""><img class="header__logo" src="img/Logo.svg"></a>
+            <div class="logo" href=""><img class="header__logo" src="img/Logo.svg"></div>
             <div class="menu">
-                <button class="menu__button menu__about-us">О нас</button>
-                <button class="menu__button menu__price-list">Меню</button>
-                <button class="menu__button menu__review">Отзывы</button>
-                <button class="menu__button menu__gallery">Галерея</button>
-                <button class="menu__button menu__contact">Контакты</button>
+                <a href="#About" class="menu__button menu__about-us">О нас</a>
+                <a href="#Menu-catalog" class="menu__button menu__price-list">Меню</a>
+                <a href="#Feedback" class="menu__button menu__review">Отзывы</a>
+                <a href="#Instagram-gallery" class="menu__button menu__gallery">Галерея</a>
+                <a href="#map-wrapper" class="menu__button menu__contact">Контакты</a>
             </div>
         </nav>
         <div class="main-screen">
             <h1 class="main-screen__title1">Вкус</h1>
             <img class="main-screen__img" src="img/tracery.svg" alt="">
             <h2 class="main-screen__title2">как искуство</h2>
-            <button class="main-screen__button">забронировать столик</button>
+            <a href="#Modal" class="main-screen__button">забронировать столик</a>
         </div>
         <div class="social-block">
             <a class="social-block__vk" href="https://vk.com/public178969939" target="_blank"><img src="img/vk-icon.svg" alt=""></a>
             <a class="social-block__inst" href="https://www.instagram.com/cafe__masalli_2019/" target="_blank"><img src="img/inst-icon.svg" alt=""></a>
         </div>
     </header>
-    <section class="About-Us">
+    <section class="About-Us" id="About">
         <div class="About-Us__Shadow-box">
             <div class="Shadow-box__img">
                 <img src="img/AboutUs-img.jpg" alt="">
@@ -104,7 +104,7 @@
             </button>
         </div>
     </section>
-    <!--<section class="Feedback" id="Feedback">
+    <section class="Feedback" id="Feedback">
         <h4 class="Feedback__title content">Что говорят о нас посетители</h4>
         <div class="Feedback__container content">
             <div class="Feedback__box">
@@ -153,7 +153,7 @@
                 <div class="Feedback__line"></div>
             </div>
         </div>
-    </section>-->
+    </section>
     <section id="Instagram-gallery">
         <div class="Instagram content">
             <div class="Instagram__container">
@@ -191,13 +191,13 @@
             <a href="tel: 89156516301" class="Map__tel"><img src="img/tel-icon.svg" alt="">+7 915 651 63 01</a>
             <a href="mailto: masalli@gmail.com" class="Map__email"><img src="img/email-icon.svg" alt="">masalli@gmail.com</a>
         </div>
-        <div class="Map__modal">
+        <div class="Map__modal" id="Modal">
             <form action="" method="post">
                 <h5 class="Map__title">Свяжись с нами</h5>
                 <input class="Map__input" name="user_name" type="text" placeholder="ФИО">
                 <input class="Map__input" name="user_email" type="email" placeholder="E-mail">
                 <input class="Map__input" name="user_phone" type="tel" placeholder="Телефон">
-                <input class="Map__input Map__input-mail" name="user_mail" type="text" placeholder="Сообщение">
+                <textarea class="Map__input Map__input-mail" name="user_mail" placeholder="Сообщение"></textarea>
                 <button class="Map__button">Отправить</button>
             </form>
         </div>
@@ -214,7 +214,7 @@
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type="text/javascript" src="slick/slick.min.js"></script>
-    <script type="text/javascript" src="js/draggin.min.js"></script>
+    <!--<script type="text/javascript" src="js/draggin.min.js"></script>-->
     <script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
