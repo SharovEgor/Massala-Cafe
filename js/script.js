@@ -1,6 +1,6 @@
 $(document).ready(function () {
     $('#Menu-catalog .Menu__slider').slick({
-        slidesToShow: 2,
+        slidesToShow: 1,
         infinite: false,
         variableWidth: true,
         prevArrow: '#Menu-catalog .Menu__button-prev',
@@ -79,4 +79,16 @@ window.addEventListener('load', function () {
             map.style.transform = "translate(-" + newX + "px, -" + newY + "px)";
         }
     });
+});
+
+
+$('.mob-menu__button').on('click', function(e) {
+    e.preventDefault();
+    // $(this).toggleClass('menu-btn_active');
+    $('.mob-menu__fork').toggleClass('mob-menu__fork-active');
+    $('.mob-menu__knife').toggleClass('mob-menu__knife-active');
+    $('.menu').toggleClass('menu-active');
+    $('.logo').toggleClass('logo-active');
+
+
 });

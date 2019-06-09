@@ -59,7 +59,9 @@ nav {
     margin-right: 0;
     padding-right: 0;
 }
-
+.mob-menu__button {
+    display: none;
+}
 .main-screen {
     display: flex;
     flex-direction: column;
@@ -728,15 +730,6 @@ footer {
 /*End footer*/
 /*Start @media only screen and */
 @media only screen and (max-width: 1024px){
-    .Map__modal{
-        right: 5%;
-    }
-    .Map__modal form {
-        margin: 0 3vw;
-    }
-    .Map__title {
-        font-size: 45px;
-    }
     nav {
         right: 3vw;
         left: 5.5vw;
@@ -766,6 +759,15 @@ footer {
     .Feedback__line {
         width: calc(100% - (7.3vw * 2));
     }
+    .Map__modal{
+        right: 5%;
+    }
+    .Map__modal form {
+        margin: 0 3vw;
+    }
+    .Map__title {
+        font-size: 45px;
+    }
 }
 @media only screen and (max-width: 900px) {
     .content {
@@ -782,4 +784,119 @@ footer {
         font-size: 43px;
     }
 }
+@media only screen and (max-width: 768px) {
+    .main-screen__title1 {
+        font-size: 138px;
+    }
+    .About-Us {
+        min-height: 380px;
+    }
+    .Shadow-box__img {
+        display: none;
+    }
+    .Shadow-box__text-box {
+        width: 86vw;
+        text-align: center;
+        margin: 50px auto 45px auto;
+    }
+    .text-box__headline:after {
+        left: 0;
+        right: 0;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .Feedback__container {
 
+    }
+    .Feedback__box {
+        padding: 110px 4.3vw 70px;
+        flex-shrink: 0;
+        width: calc(95% - 4.3vw *2);
+    }
+    .Feedback__author-face {
+        width: 60px;
+        height: 40px;
+        margin-left: 5px;
+    }
+    .Feedback__author-face:before {
+        height: 40px;
+        width: 5px;
+    }
+    .Feedback__author-face img {
+        width: 100%;
+    }
+    .Feedback__author-name {
+        font-size: 12px;
+        margin: 17px 10px 10px;
+    }
+    .Feedback__button {
+        right: 4.3vw;
+    }
+    .Feedback__line {
+        width: calc(100% - (4.3vw * 2));
+    }
+    .menu__button {
+        padding-right: 3.5vw;
+        font-size: 3.3vw;
+    }
+    .mob-menu__button {
+        display: block;
+        position: relative;
+        width: 55px;
+        height: 55px;
+        cursor: pointer;
+        transition: 0.2s;
+        flex-shrink: 0;
+    }
+    .mob-menu__fork {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 40%;
+        transition: 1s;
+    }
+    .mob-menu__fork-active {
+        transform: rotate(-45deg) translateY(18.6px);
+        transform-origin: bottom;
+    }
+    .mob-menu__fork-img {
+        width: 100%;
+        height: 100%;
+    }
+    .mob-menu__knife {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 40%;
+        transition: 1s;
+    }
+    .mob-menu__knife-active {
+        transform: rotate(45deg) translateY(-18.6px);
+        transform-origin: top;
+    }
+    .mob-menu__knife-img {
+        width: 100%;
+        height: 100%;
+        transform: rotate(180deg);
+    }
+    .menu {
+        transform: scaleX(0) translateX(40px);
+        transform-origin: right;
+        transition: 0.5s;
+        position: absolute;
+    }
+
+    .menu-active {
+        transform: scaleX(1) translateX(0px);
+        transform-origin: right;
+    }
+    .logo {
+        transform-origin: left;
+        transition: 0.5s;
+        height: 75px;
+        width: 185px;
+    }
+    .logo-active {
+        transform: scaleX(0);
+    }
+}
