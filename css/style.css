@@ -76,7 +76,9 @@ nav {
     line-height: 100%;
     letter-spacing: 0.3em;
     color: #FFFFFF;
-    margin-right: -0.35em;
+}
+.main-screen__title1 span {
+    letter-spacing: -0.07em;
 }
 
 .main-screen__img {
@@ -737,6 +739,9 @@ footer {
     .logo {
         width: 24vw;
     }
+    .social-block {
+        padding-right: 5vw;
+    }
     .menu__button {
         padding-right: 4.2vw;
         font-size: 17px;
@@ -827,10 +832,11 @@ footer {
     }
     .Feedback__author-name {
         font-size: 12px;
-        margin: 17px 10px 10px;
+        margin: 17px 5px 10px;
     }
     .Feedback__button {
         right: 4.3vw;
+        bottom: 70px;
     }
     .Feedback__line {
         width: calc(100% - (4.3vw * 2));
@@ -898,5 +904,92 @@ footer {
     }
     .logo-active {
         transform: scaleX(0);
+    }
+    .Map__image {
+        display: none;
+    }
+    .Map__contact {
+        display: none;
+    }
+    .Map__modal {
+        position: unset;
+        margin: auto;
+    }
+}
+
+@media only screen and (max-width: 375px){
+    .Feedback__author-face {
+        width: 50px;
+        height: 40px;
+        margin-left: 0.5vw;
+    }
+    .Feedback__author-face:before {
+        height: 40px;
+        width: 0.5vw;
+    }
+    .Feedback__author-face img {
+        height: 100%;
+    }
+    .Feedback__author-name {
+        font-size: 10px;
+    }
+    .Feedback__button {
+        min-width: 90px;
+    }
+}
+@media only screen and (max-width: 320px) {
+    .menu__button {
+        padding-right: 2.5vw;
+    }
+    .main-screen__title1 {
+        font-size: 120px;
+    }
+    .main-screen__title1 span {
+        letter-spacing: -0.08em;
+    }
+    .main-screen__img {
+        width: 95%;
+    }
+    .main-screen__title2 {
+        font-size: 65px;
+    }
+    .mob-menu__knife-active {
+        transform: rotate(45deg) translateY(-14px);
+    }
+    .mob-menu__fork-active {
+        transform: rotate(-45deg) translateY(14px);
+    }
+    .mob-menu__button {
+        width: 40px;
+        height: 40px;
+    }
+    .logo {
+        height: 60px;
+        width: 160px;
+    }
+    .Feedback__author-face {
+        width: 0;
+    }
+    .Instagram {
+        left: 25px;
+    }
+    .Instagram__title {
+        margin-left: -25px;
+    }
+    .Instagram__link {
+        border: none;
+
+    }
+    .Instagram__slide {
+        width: 260px;
+    }
+    .Instagram__slide img {
+        width: 100%;
+    }
+    .Map__title {
+        margin: 0 0 42px;
+    }
+    .Footer__logo {
+        width: 100%;
     }
 }
