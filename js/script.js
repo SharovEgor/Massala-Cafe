@@ -35,14 +35,14 @@ window.addEventListener('load', function () {
         if (window.innerWidth < 1000) {
             map.style.transform = "translate(-1635px, -2328px)";
         }
-        if (window.innerWidth < 800) {
-            map.style.transform = "translate(-1635px, -2328px)";
+        if (window.innerWidth < 520) {
+            map.style.transform = "translate(-1785px, -2328px)";
         }
-        if (window.innerWidth < 400) {
+        /*if (window.innerWidth < 400) {
             map.style.transform = "translate(-1635px, -2328px)";
         } else {
             map.style.transform = "translate(-1635px, -2328px)";
-        }
+        }*/
     }
 
     adaptiveMap();

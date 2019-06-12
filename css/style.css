@@ -566,14 +566,14 @@ nav {
 .Map {
     width: 100%;
     max-width: 1280px;
-    height: 100vh;
+    /*height: 100vh;
     min-height: 450px;
-    max-height: 510px;
+    max-height: 510px;*/
     margin: 0 auto;
     overflow: hidden;
     position: relative;
 }
-.Map iframe {
+.Map__iframe {
     width: 100%;
     max-width: 1280px;
     height: 100vh;
@@ -789,6 +789,45 @@ footer {
         font-size: 43px;
     }
 }
+@media only screen and (min-width: 850px) {
+    .Map__iframe-mob {
+        display: none;
+    }
+    .Map__contact-mob {
+        display: none;
+    }
+}
+@media only screen and (max-width: 850px) {
+    .Map__iframe {
+        display: none;
+    }
+    .Map__contact {
+        display: none;
+    }
+    .Map__modal {
+        position: unset;
+        margin: auto;
+        border: 5px solid #fff16e;
+        border-radius: 4%;
+        box-shadow: 2px 5px 25px 4px rgba(255,241,110,0.8);
+        margin-bottom: 20px;
+    }
+    .Map__iframe-mob {
+        width: 100%;
+        max-width: 1280px;
+        height: 100vh;
+        min-height: 450px;
+        max-height: 510px;
+        margin: 0 auto;
+    }
+    .Map__contact-mob {
+        position: absolute;
+        bottom: 80px;
+        left: 210px;
+        display: flex;
+        flex-direction: column;
+    }
+}
 @media only screen and (max-width: 768px) {
     .main-screen__title1 {
         font-size: 138px;
@@ -905,18 +944,12 @@ footer {
     .logo-active {
         transform: scaleX(0);
     }
-    .Map__image {
-        display: none;
-    }
-    .Map__contact {
-        display: none;
-    }
-    .Map__modal {
-        position: unset;
-        margin: auto;
+}
+@media only screen and (max-width: 520px) {
+    .Map__contact-mob {
+        left: 60px;
     }
 }
-
 @media only screen and (max-width: 375px){
     .Feedback__author-face {
         width: 50px;
