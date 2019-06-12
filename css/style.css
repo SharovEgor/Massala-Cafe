@@ -563,6 +563,14 @@ nav {
     overflow: hidden;
     position: relative;
 }
+.Map iframe {
+    width: 100%;
+    max-width: 1280px;
+    height: 100vh;
+    min-height: 450px;
+    max-height: 510px;
+    margin: 0 auto;
+}
 
 .Map__image {
     width: 3562px;
