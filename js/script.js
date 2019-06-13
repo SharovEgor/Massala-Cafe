@@ -1,6 +1,6 @@
 $(document).ready(function () {
     $('#Menu-catalog .Menu__slider').slick({
-        slidesToShow: 2,
+        slidesToShow: 1,
         infinite: false,
         variableWidth: true,
         prevArrow: '#Menu-catalog .Menu__button-prev',
@@ -35,14 +35,16 @@ window.addEventListener('load', function () {
         if (window.innerWidth < 1000) {
             map.style.transform = "translate(-1635px, -2328px)";
         }
-        if (window.innerWidth < 800) {
-            map.style.transform = "translate(-1635px, -2328px)";
-        }
-        if (window.innerWidth < 400) {
-            map.style.transform = "translate(-1635px, -2328px)";
+        if (window.innerWidth < 520) {
+            map.style.transform = "translate(-1785px, -2328px)";
         } else {
             map.style.transform = "translate(-1635px, -2328px)";
         }
+        /*if (window.innerWidth < 400) {
+            map.style.transform = "translate(-1635px, -2328px)";
+        } else {
+            map.style.transform = "translate(-1635px, -2328px)";
+        }*/
     }
 
     adaptiveMap();
@@ -79,4 +81,16 @@ window.addEventListener('load', function () {
             map.style.transform = "translate(-" + newX + "px, -" + newY + "px)";
         }
     });
+});
+
+
+$('.mob-menu__button').on('click', function(e) {
+    e.preventDefault();
+    // $(this).toggleClass('menu-btn_active');
+    $('.mob-menu__fork').toggleClass('mob-menu__fork-active');
+    $('.mob-menu__knife').toggleClass('mob-menu__knife-active');
+    $('.menu').toggleClass('menu-active');
+    $('.logo').toggleClass('logo-active');
+
+
 });
