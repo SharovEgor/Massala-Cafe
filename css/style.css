@@ -829,6 +829,10 @@ footer {
         margin: auto auto 20px;
     }
 
+    .Map__button {
+        margin: auto;
+    }
+
     .Map__iframe-mob {
         width: 100%;
         max-width: 1280px;
